@@ -45,6 +45,19 @@ namespace Day14_StackQueue
                 temp = temp.next;
             }
         }
+        public void Dequeue(int data)
+        {
+            if (head == null)
+            {
+                Console.WriteLine("\nQueue is empty, Deletion is not possible");
+                return;
+            }
+            else
+            {
+                Console.WriteLine("\nValue popped is {0} ", this.head.data);
+                head = head.next;
+            }
 
+        }
     }
 }
